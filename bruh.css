@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+body {
+    padding: 20px;
+}
+
+.tittle{
+margin-bottom: 14px;
+color: rgb(193, 197, 201);
+}
+.basico{
+margin-left: 9px;
+margin-bottom: 30px;
+}
+.pic{
+display: flex inline-block;
+
+}
+
+p{
+margin-bottom: 10px;
+}
+
+
+body {
+  background-color: #121212; /* cor de fundo escura */
+  color: #f7f7f7;
+  font-family: Arial, sans-serif; 
+  margin: 0;
+  padding: 0;
+}
+
+.idkk{
+text-decoration: none;
+
+}
+
