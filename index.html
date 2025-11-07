@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Para eu guardar</title>
+
+    <!-- Link para o arquivo CSS externo -->
     <link rel="stylesheet" href="bruh.css">
+
+    <!-- Link para o arquivo JavaScript externo -->
     <script src="aula1.js"></script>
 </head>
 
 <body>
 
+    <!-- Título principal da página -->
     <h1 class="tittle">Básico do básico (HTML)</h1>
 
+    <!-- Explicação sobre criação de arquivos -->
     <div class="basico">
         <p>
             Primeiro, crie os arquivos principais. Para isso, crie uma pasta para armazenar todos os seus projetos. <br>
@@ -24,6 +30,7 @@
         </p>
     </div>
 
+    <!-- Explicação sobre criação de estrutura HTML -->
     <div class="Criartitulo">
         <p>
             Para criar a base de um arquivo HTML, digite “!” e pressione “TAB” no teclado. <br>
@@ -42,43 +49,40 @@
         </p>
     </div>
 
+    <!-- Extensões recomendadas para o VS Code -->
     <div class="extensoes">
         <h2>Extensões para o VS Code</h2>
         <p>Aqui estão algumas extensões que eu recomendo:</p>
     </div>
 
+    <p>Onde ir para procurar as extensões</p>
+
+    <!-- Imagens de exemplo -->
     <div class="pic">
-        <img src="image.png" alt="">
+        <img src="image2.png" alt="">
         <img src="image1.png" alt="">
     </div>
 
-    <div class="imagem">
-        <h2>Adicionar imagens</h2>
+    <!-- Seção sobre links, mídias e imagens -->
+    <div class="Links">
+        <h1>Links e mídias</h1>
+
+        <h3>Imagens</h3>
         <p>
             Para adicionar imagens é simples: use a tag <strong>&lt;img&gt;</strong>. <br>
             Dentro do atributo <strong>src=""</strong>, coloque o nome do arquivo da sua imagem 
             (ela precisa estar na mesma pasta). <br>
             Exemplo: <code>&lt;img src="minhafoto.jpg"&gt;</code> <br>
             O atributo <strong>alt</strong> serve para mostrar um texto alternativo caso a imagem não carregue. 
-            É opcional, mas recomendado.
+            É opcional mas recomendado, e para terminar tem o <strong>width</strong>, que define o tamanho da imagem.
         </p>
-    </div>
 
-    <div class="class">
-        <h2>Classes no HTML</h2>
-        <p>Aqui voce pode criar classes no html para usar no css ex: p class="agua"</p>
-        <p>
-            Ai no css voce coloca <code>.agua { }</code> e dentro das chaves você usa os comandos para essa classe em específico. <br>
-            Também é possível usar a classe no <strong>div</strong>.
-        </p>
-    </div>
-
-    <div class="juntar">
         <h2>Juntar imagens</h2>
-        <p>Para juntar imagens, use class e utilize o <code>display: flex</code> ou <code>inline-block</code>.</p>
-    </div>
+        <p>
+            Para juntar imagens, use uma <strong>class</strong> e utilize o 
+            <code>display: flex;</code> ou <code>display: inline-block;</code> no CSS.
+        </p>
 
-    <div class="links">
         <h2>Criar links dentro do site</h2>
         <p>
             Para adicionar um link no seu site, use a tag 
@@ -95,25 +99,61 @@
             Antes disso, você pode adicionar uma <strong>class</strong> ao link e, no CSS, usar: <br>
             <code>.idk { text-decoration: none; }</code>
         </p>
+
+        <!-- Inserindo vídeos -->
+        <h2>Vídeos</h2>
+        <p>
+            Para colocar vídeos no HTML, use esta tag: <br>
+            <code>&lt;video src="video2.mp4" controls&gt;&lt;/video&gt;</code>
+        </p>
+
+        <!-- Inserindo áudios -->
+        <h2>Áudio</h2>
+        <p>
+            Para colocar um áudio no HTML, use esta tag: <br>
+            <code>&lt;audio src="musica.mp3" controls&gt;&lt;/audio&gt;</code>
+        </p>
     </div>
 
+    <!-- Explicação sobre classes -->
+    <div class="class">
+        <h2>Classes no HTML</h2>
+        <p>
+            Aqui você pode criar classes no HTML para usar no CSS. <br>
+            Exemplo: <code>&lt;p class="agua"&gt;</code>
+        </p>
+        <p>
+            Aí no CSS você coloca <code>.agua { }</code> e dentro das chaves usa os comandos para essa classe específica. <br>
+            Também é possível usar a classe em uma <strong>&lt;div&gt;</strong>.
+        </p>
+    </div>
+
+    <!-- Explicação sobre margin -->
     <div class="margin">
         <h2>Margin (ou margem) em sites é o espaço externo de um elemento</h2>
-        <p>Aqui vai ser todos os tipos de margin:</p>
+        <p>Aqui vão todos os tipos de margin:</p>
 
-        <p><code>margin: 10px;</code> — Todas as margens iguais</p>
-        <p><code>margin: 10px 20px;</code> — Cima/Baixo = 10px, Esquerda/Direita = 20px</p>
-        <p><code>margin: 10px 20px 30px;</code> — Cima = 10px, Lados = 20px, Baixo = 30px</p>
-        <p><code>margin: 10px 20px 30px 40px;</code> — Cima, Direita, Baixo, Esquerda (sentido horário)</p>
-
-        <p><code>margin-top: 15px;</code> — espaço superior do elemento</p>
-        <p><code>margin-right: 20px;</code> — espaço da direita</p>
-        <p><code>margin-bottom: 25px;</code> — margem inferior</p>
-        <p><code>margin-left: 30px;</code> — margem à esquerda</p>
-        <p><code>margin: auto;</code> — centraliza elemento horizontalmente</p>
+        <!-- Lista ordenada de exemplos -->
+        <ol>
+            <li><code>• margin: 10px;</code> — Todas as margens iguais</li>
+            <li><code>• margin: 10px 20px;</code> — Cima/Baixo = 10px, Esquerda/Direita = 20px</li>
+            <li><code>• margin: 10px 20px 30px;</code> — Cima = 10px, Lados = 20px, Baixo = 30px</li>
+            <li><code>• margin: 10px 20px 30px 40px;</code> — Cima, Direita, Baixo, Esquerda (sentido horário)</li>
+            <li><code>• margin-top: 15px;</code> — Espaço superior do elemento</li>
+            <li><code>• margin-right: 20px;</code> — Espaço à direita</li>
+            <li><code>• margin-bottom: 25px;</code> — Margem inferior</li>
+            <li><code>• margin-left: 30px;</code> — Margem à esquerda</li>
+            <li><code>• margin: auto;</code> — Centraliza o elemento horizontalmente</li>
+        </ol>
+    </div>
+    <h1> gpt </h1>
+    <div class="vlwgpt">
+     <p>obrigado gpt por organizar o meu codigo tava todo bagunçado e por corrigir a caligrafia do codigo</p>
+    <img src="image3.png" alt="">
     </div>
 
 </body>
 </html>
 
-<a class="idkk" href="https://herta.deno.dev/" target="_blank">Clique aqui bro</a>
+
+
