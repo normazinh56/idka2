@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="bruh.css">
 
     <!-- Link para o arquivo JavaScript externo -->
-    <script src="aula1.js"></script>
+    
 </head>
 
 <body>
 
+   
     <!-- Título principal da página -->
     <h1 class="tittle">Básico do básico (HTML)</h1>
 
@@ -31,7 +32,7 @@
     </div>
 
     <!-- Explicação sobre criação de estrutura HTML -->
-    <div class="Criartitulo">
+    <div>
         <p>
             Para criar a base de um arquivo HTML, digite “!” e pressione “TAB” no teclado. <br>
             Assim, você pode gerar automaticamente a estrutura principal e fazer algumas modificações interessantes.
@@ -40,13 +41,22 @@
             No campo <strong>title</strong>, você pode alterar o texto que aparece na aba do navegador, ao lado do botão de fechar.
         </p>
 
-        <h2>Criar um título e um parágrafo</h2>
-        <p>
-            Para criar um título é simples: use a tag <strong>&lt;h1&gt;</strong> para o título maior.
-        </p>
-        <p>
-            Para criar um parágrafo, use a tag <strong>&lt;p&gt;</strong>.
-        </p>
+        <h2>Fontes, títulos e parágrafos</h2>
+
+<table class="tabela-tags">
+  <tr><td>&lt;h1&gt;</td><td>— Cria um título maior</td></tr>
+  <tr><td>&lt;p&gt;</td><td>— Cria um parágrafo</td></tr>
+  <tr><td>&lt;mark&gt;</td><td>— Destaca um texto</td></tr>
+  <tr><td>&lt;small&gt;</td><td>— Cria um texto menor</td></tr>
+  <tr><td>&lt;u&gt;</td><td>— Cria um texto sublinhado</td></tr>
+  <tr><td>&lt;br&gt;</td><td>— Quebra o texto na próxima linha</td></tr>
+  <tr><td>&lt;hr&gt;</td><td>— Cria uma linha horizontal</td></tr>
+  <tr><td>&lt;b&gt;</td><td>— Deixa o texto em negrito</td></tr>
+  <tr><td>&lt;i&gt;</td><td>— Deixa o texto em itálico</td></tr>
+  <tr><td>&lt;ul&gt; + &lt;li&gt;</td><td>— Cria uma lista (não ordenada)</td></tr>
+</table>
+
+
     </div>
 
     <!-- Extensões recomendadas para o VS Code -->
@@ -113,6 +123,10 @@
             Para colocar um áudio no HTML, use esta tag: <br>
             <code>&lt;audio src="musica.mp3" controls&gt;&lt;/audio&gt;</code>
         </p>
+
+        <h2> incorporar conteuno externo </h2>
+
+        <p> para incorporar um conteuno externo use: <strong>&lt;iframe&gt;</strong></p>
     </div>
 
     <!-- Explicação sobre classes -->
@@ -134,26 +148,110 @@
         <p>Aqui vão todos os tipos de margin:</p>
 
         <!-- Lista ordenada de exemplos -->
-        <ol>
-            <li><code>• margin: 10px;</code> — Todas as margens iguais</li>
-            <li><code>• margin: 10px 20px;</code> — Cima/Baixo = 10px, Esquerda/Direita = 20px</li>
-            <li><code>• margin: 10px 20px 30px;</code> — Cima = 10px, Lados = 20px, Baixo = 30px</li>
-            <li><code>• margin: 10px 20px 30px 40px;</code> — Cima, Direita, Baixo, Esquerda (sentido horário)</li>
-            <li><code>• margin-top: 15px;</code> — Espaço superior do elemento</li>
-            <li><code>• margin-right: 20px;</code> — Espaço à direita</li>
-            <li><code>• margin-bottom: 25px;</code> — Margem inferior</li>
-            <li><code>• margin-left: 30px;</code> — Margem à esquerda</li>
-            <li><code>• margin: auto;</code> — Centraliza o elemento horizontalmente</li>
-        </ol>
-    </div>
-    <h1> gpt </h1>
-    <div class="vlwgpt">
-     <p>obrigado gpt por organizar o meu codigo tava todo bagunçado e por corrigir a caligrafia do codigo</p>
-    <img src="image3.png" alt="">
-    </div>
+        <div class="margins">
+        <table class="tabela-tags">
+            <tr>
+            <td>margin: 10px; </td>
+            <td>— Todas as margens iguais</td>
+             </tr>
+
+             <tr>   
+            <td>margin:10px 20px;</td>
+            <td>— Cima/Baixo = 10px, Esquerda/Direita = 20px</td>
+             </tr>
+            <tr>
+                <td>margin: 10px 20px 30px;</td>
+                <td>— Cima = 10px, Lados = 20px, Baixo = 30px</td>
+            </tr>
+            
+            <tr>
+<td>margin: 10px 20px 30px 40px;</td>
+<td> Cima, Direita, Baixo, Esquerda (sentido horário)</td>
+
+            </tr>
+            <tr>
+<td> margin-top: 15px;</td>
+<td>— Espaço superior do elemento</td>
+</tr>
+      
+            <tr>
+<td>margin-right: 20px;</td>
+<td>— Espaço à direita</td>
+</tr>
+      
+            <tr>
+<td>margin-bottom: 25px;</td>
+<td>— Margem inferior</td>
+</tr>
+      
+
+           <tr>
+<td>margin-left: 30px;</td>
+<td>— Margem à esquerda</td>
+</tr>
+  
+
+           <tr>
+<td>margin: auto;</td>
+<td>— Centraliza o elemento horizontalmente</td>
+</tr>
+  
+
+</table>
+
+
+        
+</div>
+<div>
+        <h2>Formulários</h2>
+<table class="tabela-tags">
+  <tr><td>&lt;form&gt;</td><td>— Início de um formulário</td></tr>
+  <tr><td>&lt;input&gt;</td><td>— Campo de entrada</td></tr>
+  <tr><td>&lt;textarea&gt;</td><td>— Área de texto</td></tr>
+  <tr><td>&lt;select&gt;</td><td>— Menu suspenso</td></tr>
+  <tr><td>&lt;button&gt;</td><td>— Botão</td></tr>
+</table>
+
+<h1>Área pra rascunho (tirar quando quiser)</h1>
+
+<h2>Estruturação moderna (HTML5)</h2>
+<table class="tabela-tags">
+  <tr><td>&lt;header&gt;</td><td>— Cabeçalho da página ou seção</td></tr>
+  <tr><td>&lt;nav&gt;</td><td>— Menu de navegação</td></tr>
+  <tr><td>&lt;main&gt;</td><td>— Conteúdo principal</td></tr>
+  <tr><td>&lt;section&gt;</td><td>— Seção de conteúdo</td></tr>
+  <tr><td>&lt;article&gt;</td><td>— Artigo independente</td></tr>
+  <tr><td>&lt;aside&gt;</td><td>— Barra lateral / conteúdo secundário</td></tr>
+  <tr><td>&lt;footer&gt;</td><td>— Rodapé da página</td></tr>
+</table>
+
+<h1>Outras úteis</h1>
+<table class="tabela-tags">
+  <tr><td>&lt;div&gt;</td><td>— Bloco genérico (usado para layout com CSS)</td></tr>
+  <tr><td>&lt;span&gt;</td><td>— Texto em linha genérico</td></tr>
+  <tr><td>&lt;meta&gt;</td><td>— Metadados (descrição, charset, etc.)</td></tr>
+  <tr><td>&lt;link&gt;</td><td>— Importar CSS ou ícones</td></tr>
+  <tr><td>&lt;script&gt;</td><td>— Inserir código JavaScript</td></tr>
+  <tr><td>&lt;style&gt;</td><td>— Inserir CSS interno</td></tr>
+</table>
+
+<h1>Fundamentos do CSS</h1>
+<table class="tabela-tags">
+  <tr><td>body { background-color: aqua; }</td><td>— Mudar o fundo de uma página inteira</td></tr>
+  <tr><td>&lt;table&gt;</td><td>— Criar uma tabela</td></tr>
+  <tr><td>&lt;tr&gt;</td><td>— Linha de tabela</td></tr>
+  <tr><td>&lt;th&gt;</td><td>— Cabeçalho da tabela</td></tr>
+  <tr><td>&lt;caption&gt;</td><td>— Legenda da tabela</td></tr>
+</table>
+
+
+<script src="aula1.js"></script>
+
+
+
+
 
 </body>
 </html>
-
 
 
