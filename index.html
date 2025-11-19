@@ -9,14 +9,18 @@
     <link rel="stylesheet" href="bruh.css">
 
     <!-- Link para o arquivo JavaScript externo -->
-    
 </head>
+
 
 <body>
 
-   
+
+
+
+</div>
     <!-- Título principal da página -->
-    <h1 class="tittle">Básico do básico (HTML)</h1>
+    <h1 class="tittle">Básico do básico (HTML)</h1>   
+    <button class="botão12" id="botão1" >CSS</button>
 
     <!-- Explicação sobre criação de arquivos -->
     <div class="basico">
@@ -43,20 +47,18 @@
 
         <h2>Fontes, títulos e parágrafos</h2>
 
-<table class="tabela-tags">
-  <tr><td>&lt;h1&gt;</td><td>— Cria um título maior</td></tr>
-  <tr><td>&lt;p&gt;</td><td>— Cria um parágrafo</td></tr>
-  <tr><td>&lt;mark&gt;</td><td>— Destaca um texto</td></tr>
-  <tr><td>&lt;small&gt;</td><td>— Cria um texto menor</td></tr>
-  <tr><td>&lt;u&gt;</td><td>— Cria um texto sublinhado</td></tr>
-  <tr><td>&lt;br&gt;</td><td>— Quebra o texto na próxima linha</td></tr>
-  <tr><td>&lt;hr&gt;</td><td>— Cria uma linha horizontal</td></tr>
-  <tr><td>&lt;b&gt;</td><td>— Deixa o texto em negrito</td></tr>
-  <tr><td>&lt;i&gt;</td><td>— Deixa o texto em itálico</td></tr>
-  <tr><td>&lt;ul&gt; + &lt;li&gt;</td><td>— Cria uma lista (não ordenada)</td></tr>
-</table>
-
-
+        <table class="tabela-tags">
+            <tr><td>&lt;h1&gt;</td><td>— Cria um título maior</td></tr>
+            <tr><td>&lt;p&gt;</td><td>— Cria um parágrafo</td></tr>
+            <tr><td>&lt;mark&gt;</td><td>— Destaca um texto</td></tr>
+            <tr><td>&lt;small&gt;</td><td>— Cria um texto menor</td></tr>
+            <tr><td>&lt;u&gt;</td><td>— Cria um texto sublinhado</td></tr>
+            <tr><td>&lt;br&gt;</td><td>— Quebra o texto na próxima linha</td></tr>
+            <tr><td>&lt;hr&gt;</td><td>— Cria uma linha horizontal</td></tr>
+            <tr><td>&lt;b&gt;</td><td>— Deixa o texto em negrito</td></tr>
+            <tr><td>&lt;i&gt;</td><td>— Deixa o texto em itálico</td></tr>
+            <tr><td>&lt;ul&gt; + &lt;li&gt;</td><td>— Cria uma lista (não ordenada)</td></tr>
+        </table>
     </div>
 
     <!-- Extensões recomendadas para o VS Code -->
@@ -71,12 +73,13 @@
     <div class="pic">
         <img src="image2.png" alt="">
         <img src="image1.png" alt="">
-        
     </div>
 
     <!-- Seção sobre links, mídias e imagens -->
     <div class="Links">
         <h1>Links e mídias</h1>
+    <h2>você pode linkar outra pagina html junto com a principal, veja como</h2>
+    <p>para linkar crie o arquivo html que você deseja e coloque no html principal &lt;button&gt; class="botão" id="botão1"</p>
 
         <h3>Imagens</h3>
         <p>
@@ -125,9 +128,8 @@
             <code>&lt;audio src="musica.mp3" controls&gt;&lt;/audio&gt;</code>
         </p>
 
-        <h2> incorporar conteuno externo </h2>
-
-        <p> para incorporar um conteuno externo use: <strong>&lt;iframe&gt;</strong></p>
+        <h2>incorporar conteúdo externo</h2>
+        <p>Para incorporar um conteúdo externo use: <strong>&lt;iframe&gt;</strong></p>
     </div>
 
     <!-- Explicação sobre classes -->
@@ -144,117 +146,63 @@
     </div>
 
     <!-- Explicação sobre margin -->
-    <div class="margin">
-        <h2>Margin (ou margem) em sites é o espaço externo de um elemento</h2>
-        <p>Aqui vão todos os tipos de margin:</p>
+        <div>
+            <h2>Formulários</h2>
+            <table class="tabela-tags">
+                <tr><td>&lt;form&gt;</td><td>Agrupa os campos e define onde os dados serão enviados.</td></tr>
+                <tr><td>&lt;input&gt;</td><td>— Campo de entrada de texto, senha ou botão</td></tr>
+<tr><td>label</td><td>descreve cada campo de forma acessivel</td></tr>
+<tr><td>type="text"</td><td>campo de texto norma(ex: email ou usuario</td>
+<tr><td>type="password"</td><td>campo que esconde os caracteres da senha</td></tr>
+<tr><td>type"submit"</td><td>botão para enviar o formulario</td></tr>
+<tr><td>id/name</td><td>identificadores para acessar os elementos do js</td></tr>
 
-        <!-- Lista ordenada de exemplos -->
-        <div class="margins">
-        <table class="tabela-tags">
-            <tr>
-            <td>margin: 10px; </td>
-            <td>— Todas as margens iguais</td>
-             </tr>
 
-             <tr>   
-            <td>margin:10px 20px;</td>
-            <td>— Cima/Baixo = 10px, Esquerda/Direita = 20px</td>
-             </tr>
-            <tr>
-                <td>margin: 10px 20px 30px;</td>
-                <td>— Cima = 10px, Lados = 20px, Baixo = 30px</td>
-            </tr>
+                <tr><td>&lt;textarea&gt;</td><td>— Área de texto</td></tr>
+                <tr><td>&lt;select&gt;</td><td>— Menu suspenso</td></tr>
+                <tr><td>&lt;button&gt;</td><td>— Botão</td></tr>
+                
+            </table>
+
             
-            <tr>
-<td>margin: 10px 20px 30px 40px;</td>
-<td> Cima, Direita, Baixo, Esquerda (sentido horário)</td>
 
-            </tr>
-            <tr>
-<td> margin-top: 15px;</td>
-<td>— Espaço superior do elemento</td>
-</tr>
-      
-            <tr>
-<td>margin-right: 20px;</td>
-<td>— Espaço à direita</td>
-</tr>
-      
-            <tr>
-<td>margin-bottom: 25px;</td>
-<td>— Margem inferior</td>
-</tr>
-      
+            <h2>Estruturação moderna (HTML5)</h2>
+            <table class="tabela-tags">
+                <tr><td>&lt;header&gt;</td><td>— Cabeçalho da página ou seção</td></tr>
+                <tr><td>&lt;nav&gt;</td><td>— Menu de navegação</td></tr>
+                <tr><td>&lt;main&gt;</td><td>— Conteúdo principal</td></tr>
+                <tr><td>&lt;section&gt;</td><td>— Seção de conteúdo</td></tr>
+                <tr><td>&lt;article&gt;</td><td>— Artigo independente</td></tr>
+                <tr><td>&lt;aside&gt;</td><td>— Barra lateral / conteúdo secundário</td></tr>
+                <tr><td>&lt;footer&gt;</td><td>— Rodapé da página</td></tr>
+            </table>
 
-           <tr>
-<td>margin-left: 30px;</td>
-<td>— Margem à esquerda</td>
-</tr>
-  
+            <h1>Outras úteis</h1>
+            <table class="tabela-tags">
+                <tr><td>&lt;div&gt;</td><td>— Bloco genérico (usado para layout com CSS)</td></tr>
+                <tr><td>&lt;span&gt;</td><td>— Texto em linha genérico</td></tr>
+                <tr><td>&lt;meta&gt;</td><td>— Metadados (descrição, charset, etc.)</td></tr>
+                <tr><td>&lt;link&gt;</td><td>— Importar CSS ou ícones</td></tr>
+                <tr><td>&lt;script&gt;</td><td>— Inserir código JavaScript</td></tr>
+                <tr><td>&lt;style&gt;</td><td>— Inserir CSS interno</td></tr>
+            </table>
 
-           <tr>
-<td>margin: auto;</td>
-<td>— Centraliza o elemento horizontalmente</td>
-</tr>
-  
-
-</table>
+           
+            <table class="tabela-tags">
+                <h1>Fundamentos do js</h1>
+                <tr>
+                    <td>document.getElementById("botão").addEventListener("click", function() { <br> })</td>
+                    <td>use este para uma função que vai usar o click</td>
+                </tr>
 
 
-        
-</div>
-<div>
-        <h2>Formulários</h2>
-<table class="tabela-tags">
-  <tr><td>&lt;form&gt;</td><td>— Início de um formulário</td></tr>
-  <tr><td>&lt;input&gt;</td><td>— Campo de entrada</td></tr>
-  <tr><td>&lt;textarea&gt;</td><td>— Área de texto</td></tr>
-  <tr><td>&lt;select&gt;</td><td>— Menu suspenso</td></tr>
-  <tr><td>&lt;button&gt;</td><td>— Botão</td></tr>
-</table>
+            </table>
 
-<h1>Área pra rascunho (tirar quando quiser)</h1>
+            <button class="id12" id="botão">Melhores sites para estudar</button>
+            
 
-<h2>Estruturação moderna (HTML5)</h2>
-<table class="tabela-tags">
-  <tr><td>&lt;header&gt;</td><td>— Cabeçalho da página ou seção</td></tr>
-  <tr><td>&lt;nav&gt;</td><td>— Menu de navegação</td></tr>
-  <tr><td>&lt;main&gt;</td><td>— Conteúdo principal</td></tr>
-  <tr><td>&lt;section&gt;</td><td>— Seção de conteúdo</td></tr>
-  <tr><td>&lt;article&gt;</td><td>— Artigo independente</td></tr>
-  <tr><td>&lt;aside&gt;</td><td>— Barra lateral / conteúdo secundário</td></tr>
-  <tr><td>&lt;footer&gt;</td><td>— Rodapé da página</td></tr>
-</table>
-
-<h1>Outras úteis</h1>
-<table class="tabela-tags">
-  <tr><td>&lt;div&gt;</td><td>— Bloco genérico (usado para layout com CSS)</td></tr>
-  <tr><td>&lt;span&gt;</td><td>— Texto em linha genérico</td></tr>
-  <tr><td>&lt;meta&gt;</td><td>— Metadados (descrição, charset, etc.)</td></tr>
-  <tr><td>&lt;link&gt;</td><td>— Importar CSS ou ícones</td></tr>
-  <tr><td>&lt;script&gt;</td><td>— Inserir código JavaScript</td></tr>
-  <tr><td>&lt;style&gt;</td><td>— Inserir CSS interno</td></tr>
-</table>
-
-<h1>Fundamentos do CSS</h1>
-<table class="tabela-tags">
-  <tr><td>body { background-color: aqua; }</td><td>— Mudar o fundo de uma página inteira</td></tr>
-  <tr><td>&lt;table&gt;</td><td>— Criar uma tabela</td></tr>
-  <tr><td>&lt;tr&gt;</td><td>— Linha de tabela</td></tr>
-  <tr><td>&lt;th&gt;</td><td>— Cabeçalho da tabela</td></tr>
-  <tr><td>&lt;caption&gt;</td><td>— Legenda da tabela</td></tr>
-</table>
-
-<button  class="id12"  id="botão">Melhores sites para estudar</button>
-
-
-<script src="aula1.js"></script>
-
-
-
-
-
+            <script src="aula1.js"></script>
+        </div>
+    </div>
 </body>
 </html>
-
-
