@@ -1,57 +1,8 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', Arial, sans-serif;
+body{
+background-color: rgb(255, 255, 255);
+font-family: Arial, sans-serif;
 }
 
-body {
-    padding: 20px;
-}
-
-.tittle{
-margin-bottom: 14px;
-color: rgb(193, 197, 201);
-}
-.basico{
-margin-left: 9px;
-margin-bottom: 30px;
-}
-.pic{
-display: flex inline-block;
-
-}
-
-p{
-margin-bottom: 20px;
-}
-
-
-body {
-  background-color: #121212; /* cor de fundo escura */
-  color: #f7f7f7;
-  font-family: Arial, sans-serif; 
-  margin: 0;
-  padding: 0;
-}
-
-.idkk{
-text-decoration: none;
-
-}
-
-h1{
-margin-bottom: 10px;
-margin-top: 10px;
-}
-
-h2{
-margin-bottom: 20px;
-}
-
-li{
-margin-bottom: 10px;
-}
 
 .tabela-tags {
     width: 100%;
@@ -60,7 +11,7 @@ margin-bottom: 10px;
     background: #1a1a1a;
     color: #fff;
     border: 2px solid #444;
-    max-width: 600px;
+    max-width: 700px;
 }
 
 .tabela-tags th {
@@ -81,9 +32,21 @@ margin-bottom: 10px;
     background: #2a2a2a;
 }
 
-
 .id12{
- 
-    background-color: #c40000;
-    font-size: 43px;
+display: block;
+}
+
+p{
+font-size: 30px;
+}
+h2{
+font-size: 40px;
+}
+h1{
+font-size: 60px;
+}
+.botão12 {
+    display: flex;
+    font-size: 39px;
+    size: 50px;
 }
