@@ -3,24 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Para eu guardar</title>
 
+    <title>HTML</title>
+<link rel="shortcut icon" href="chisa.png" type="image/x-icon">
     <!-- Link para o arquivo CSS externo -->
     <link rel="stylesheet" href="bruh.css">
+    
 
     <!-- Link para o arquivo JavaScript externo -->
 </head>
 
-
 <body>
 
-
-
-
-</div>
     <!-- Título principal da página -->
-    <h1 class="tittle">Básico do básico (HTML)</h1>   
-    <button class="botão12" id="botão1" >CSS</button>
+    <div class="titulo">
+        <h1 class="tittle">Básico do básico (HTML)</h1>
+        <button class="botao12" id="botao1">CSS</button>
+        <button class="botao13" id="botao2">JS</button>
+        <button class="botao14" id="botao3">Melhores sites para estudar</button>
+    </div>
+
+    
 
     <!-- Explicação sobre criação de arquivos -->
     <div class="basico">
@@ -29,18 +32,20 @@
             Depois de criada, vá para o VS Code e clique em “Arquivo” e, em seguida, em “Abrir pasta”. <br>
             Agora, procure a pasta que você criou e passe o mouse sobre ela para aparecer a opção de “Novo arquivo”.
         </p>
+
         <p>
             Em seguida, crie os seguintes arquivos: <strong>index.html</strong>, <strong>style.css</strong> e <strong>javascript.js</strong> 
             (você pode mudar o nome se quiser).
         </p>
     </div>
 
-    <!-- Explicação sobre criação de estrutura HTML -->
+    <!-- Explicação sobre estrutura HTML -->
     <div>
         <p>
             Para criar a base de um arquivo HTML, digite “!” e pressione “TAB” no teclado. <br>
             Assim, você pode gerar automaticamente a estrutura principal e fazer algumas modificações interessantes.
         </p>
+
         <p>
             No campo <strong>title</strong>, você pode alterar o texto que aparece na aba do navegador, ao lado do botão de fechar.
         </p>
@@ -75,11 +80,15 @@
         <img src="image1.png" alt="">
     </div>
 
-    <!-- Seção sobre links, mídias e imagens -->
+    <!-- Links, mídias e conteúdo -->
     <div class="Links">
         <h1>Links e mídias</h1>
-    <h2>você pode linkar outra pagina html junto com a principal, veja como</h2>
-    <p>para linkar crie o arquivo html que você deseja e coloque no html principal &lt;button&gt; class="botão" id="botão1"</p>
+
+        <h2>Você pode linkar outra página HTML junto com a principal, veja como</h2>
+        <p>
+            Para linkar, crie o arquivo HTML que você deseja e coloque no HTML principal:
+            &lt;button&gt; class="botão" id="botão1"
+        </p>
 
         <h3>Imagens</h3>
         <p>
@@ -101,34 +110,33 @@
         <p>
             Para adicionar um link no seu site, use a tag 
             <strong>&lt;a href="link_aqui"&gt;texto&lt;/a&gt;</strong>. <br>
-            Lembre-se de incluir o <strong>https://</strong> no início do link, 
-            senão ele pode não funcionar corretamente.
+            Lembre-se de incluir o <strong>https://</strong> no início do link, senão ele pode não funcionar corretamente.
         </p>
+
         <p>
             Caso queira que o link abra em outra guia, use: <br>
             <code>&lt;a href="link_aqui" target="_blank"&gt;Clique aqui&lt;/a&gt;</code>
         </p>
+
         <p>
             Se quiser tirar o sublinhado do link, será necessário usar CSS. <br>
             Antes disso, você pode adicionar uma <strong>class</strong> ao link e, no CSS, usar: <br>
             <code>.idk { text-decoration: none; }</code>
         </p>
 
-        <!-- Inserindo vídeos -->
         <h2>Vídeos</h2>
         <p>
             Para colocar vídeos no HTML, use esta tag: <br>
             <code>&lt;video src="video2.mp4" controls&gt;&lt;/video&gt;</code>
         </p>
 
-        <!-- Inserindo áudios -->
         <h2>Áudio</h2>
         <p>
             Para colocar um áudio no HTML, use esta tag: <br>
             <code>&lt;audio src="musica.mp3" controls&gt;&lt;/audio&gt;</code>
         </p>
 
-        <h2>incorporar conteúdo externo</h2>
+        <h2>Incorporar conteúdo externo</h2>
         <p>Para incorporar um conteúdo externo use: <strong>&lt;iframe&gt;</strong></p>
     </div>
 
@@ -145,64 +153,45 @@
         </p>
     </div>
 
-    <!-- Explicação sobre margin -->
-        <div>
-            <h2>Formulários</h2>
-            <table class="tabela-tags">
-                <tr><td>&lt;form&gt;</td><td>Agrupa os campos e define onde os dados serão enviados.</td></tr>
-                <tr><td>&lt;input&gt;</td><td>— Campo de entrada de texto, senha ou botão</td></tr>
-<tr><td>label</td><td>descreve cada campo de forma acessivel</td></tr>
-<tr><td>type="text"</td><td>campo de texto norma(ex: email ou usuario</td>
-<tr><td>type="password"</td><td>campo que esconde os caracteres da senha</td></tr>
-<tr><td>type"submit"</td><td>botão para enviar o formulario</td></tr>
-<tr><td>id/name</td><td>identificadores para acessar os elementos do js</td></tr>
+    <!-- Formulários -->
+    <div>
+        <h2>Formulários</h2>
+        <table class="tabela-tags">
+            <tr><td>&lt;form&gt;</td><td>Agrupa os campos e define onde os dados serão enviados.</td></tr>
+            <tr><td>&lt;input&gt;</td><td>— Campo de entrada de texto, senha ou botão</td></tr>
+            <tr><td>label</td><td>— Descreve cada campo de forma acessível</td></tr>
+            <tr><td>type="text"</td><td>— Campo de texto normal (ex: email ou usuário)</td></tr>
+            <tr><td>type="password"</td><td>— Campo que esconde os caracteres da senha</td></tr>
+            <tr><td>type="submit"</td><td>— Botão para enviar o formulário</td></tr>
+            <tr><td>id / name</td><td>— Identificadores para acessar os elementos no JS</td></tr>
+            <tr><td>&lt;textarea&gt;</td><td>— Área de texto</td></tr>
+            <tr><td>&lt;select&gt;</td><td>— Menu suspenso</td></tr>
+            <tr><td>&lt;button&gt;</td><td>— Botão</td></tr>
+        </table>
 
+        <h2>Estruturação moderna (HTML5)</h2>
+        <table class="tabela-tags">
+            <tr><td>&lt;header&gt;</td><td>— Cabeçalho da página ou seção</td></tr>
+            <tr><td>&lt;nav&gt;</td><td>— Menu de navegação</td></tr>
+            <tr><td>&lt;main&gt;</td><td>— Conteúdo principal</td></tr>
+            <tr><td>&lt;section&gt;</td><td>— Seção de conteúdo</td></tr>
+            <tr><td>&lt;article&gt;</td><td>— Artigo independente</td></tr>
+            <tr><td>&lt;aside&gt;</td><td>— Barra lateral / conteúdo secundário</td></tr>
+            <tr><td>&lt;footer&gt;</td><td>— Rodapé da página</td></tr>
+        </table>
 
-                <tr><td>&lt;textarea&gt;</td><td>— Área de texto</td></tr>
-                <tr><td>&lt;select&gt;</td><td>— Menu suspenso</td></tr>
-                <tr><td>&lt;button&gt;</td><td>— Botão</td></tr>
-                
-            </table>
+        <h1>Outras úteis</h1>
+        <table class="tabela-tags">
+            <tr><td>&lt;div&gt;</td><td>— Bloco genérico (usado para layout com CSS)</td></tr>
+            <tr><td>&lt;span&gt;</td><td>— Texto em linha genérico</td></tr>
+            <tr><td>&lt;meta&gt;</td><td>— Metadados (descrição, charset, etc.)</td></tr>
+            <tr><td>&lt;link&gt;</td><td>— Importar CSS ou ícones</td></tr>
+            <tr><td>&lt;script&gt;</td><td>— Inserir código JavaScript</td></tr>
+            <tr><td>&lt;style&gt;</td><td>— Inserir CSS interno</td></tr>
+        </table>
 
-            
-
-            <h2>Estruturação moderna (HTML5)</h2>
-            <table class="tabela-tags">
-                <tr><td>&lt;header&gt;</td><td>— Cabeçalho da página ou seção</td></tr>
-                <tr><td>&lt;nav&gt;</td><td>— Menu de navegação</td></tr>
-                <tr><td>&lt;main&gt;</td><td>— Conteúdo principal</td></tr>
-                <tr><td>&lt;section&gt;</td><td>— Seção de conteúdo</td></tr>
-                <tr><td>&lt;article&gt;</td><td>— Artigo independente</td></tr>
-                <tr><td>&lt;aside&gt;</td><td>— Barra lateral / conteúdo secundário</td></tr>
-                <tr><td>&lt;footer&gt;</td><td>— Rodapé da página</td></tr>
-            </table>
-
-            <h1>Outras úteis</h1>
-            <table class="tabela-tags">
-                <tr><td>&lt;div&gt;</td><td>— Bloco genérico (usado para layout com CSS)</td></tr>
-                <tr><td>&lt;span&gt;</td><td>— Texto em linha genérico</td></tr>
-                <tr><td>&lt;meta&gt;</td><td>— Metadados (descrição, charset, etc.)</td></tr>
-                <tr><td>&lt;link&gt;</td><td>— Importar CSS ou ícones</td></tr>
-                <tr><td>&lt;script&gt;</td><td>— Inserir código JavaScript</td></tr>
-                <tr><td>&lt;style&gt;</td><td>— Inserir CSS interno</td></tr>
-            </table>
-
-           
-            <table class="tabela-tags">
-                <h1>Fundamentos do js</h1>
-                <tr>
-                    <td>document.getElementById("botão").addEventListener("click", function() { <br> })</td>
-                    <td>use este para uma função que vai usar o click</td>
-                </tr>
-
-
-            </table>
-
-            <button class="id12" id="botão">Melhores sites para estudar</button>
-            
-
-            <script src="aula1.js"></script>
-        </div>
+        <script src="aula1.js"></script>
     </div>
+
 </body>
 </html>
