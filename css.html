@@ -1,277 +1,294 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS</title>
     <link rel="stylesheet" href="bruh.css">
+    
     <link rel="shortcut icon" href="knight.jpg" type="image/x-icon">
-    
 </head>
+
 <body>
+    <div class="borda1">
+        <div class="titulo">
+            <h1 class="tittle">Fundamentos do CSS</h1>
+            <button class="botao13" id="botao2">JS</button>
+            <button class="botao15" id="botao4">HTML</button>
+        </div>
+    </div>
 
-    
-<div class="borda1">
-    <div class="titulo">
-<h1 class="tittle">Fundamentos do CSS</h1>
-<button class="botao13" id="botao2">JS</button>
-<button class="botao15" id="botao4">HTML</button>
-</div>
+    <div>
+        <h1>body</h1>
+        <h2>Fontes de texto</h2>
+        <p>
+            O body no CSS significa todo o corpo do site, então se você definir um tipo de fonte dentro do body,
+            todo o site vai usar somente esse tipo de fonte de texto. Veja um exemplo abaixo:
+        </p>
+        <p>
+body {
+    background-color: #ccc;
+}
+        </p>
+        <p>Aqui vai mudar o fundo da página.</p>
+    </div>
 
-</div>
+    <div>
+        <h2>Dica</h2>
+        <p>Você pode colocar mais de um arquivo CSS para linkar ao HTML.</p>
+    </div>
 
-
-    <h1>body</h1>
-    <h2>Fontes de texto</h2>
-    <p>o body no css significa todo o corpo do site então se voce definir um tipo de fonte dentro do body todo o site <br>
-        vai usa somente esse tipo de fonte de texto, para usar o body veja um exemplo abaixo</p>
-    <p>
-    body{<br>
-background-color: #ccc; <br>
-font-family: Arial, sans-serif;<br>
-}  
-    </p>
-     
-    <h2>Dica</h2>
-    <p>você pode colocar mais de um estilo css que é para linkar o html com o css</p>
-    
-<h2>Tipos de Estilo de Borda (border-style)</h2>
-
-<table class="tabela-tags">
-  <tr>
-    <td>Estilo</td>
-    <td>Exemplo</td>
-    <td>Descrição</td>
-  </tr>
-  <tr>
-    <td>none</td>
-    <td>sem borda</td>
-    <td>Não mostra borda (padrão).</td>
-  </tr>
-  <tr>
-    <td>hidden</td>
-    <td>invisível</td>
-    <td>Igual ao none, mas usado em tabelas.</td>
-  </tr>
-  <tr>
-    <td>solid</td>
-    <td>─────</td>
-    <td>Linha contínua.</td>
-  </tr>
-  <tr>
-    <td>dashed</td>
-    <td>- - - -</td>
-    <td>Linha tracejada.</td>
-  </tr>
-  <tr>
-    <td>dotted</td>
-    <td>. . . .</td>
-    <td>Linha pontilhada.</td>
-  </tr>
-  <tr>
-    <td>double</td>
-    <td>════</td>
-    <td>Dupla linha.</td>
-  </tr>
-  <tr>
-    <td>groove</td>
-    <td>efeito 3D</td>
-    <td>Parecido com “entalhado”.</td>
-  </tr>
-  <tr>
-    <td>ridge</td>
-    <td>efeito 3D</td>
-    <td>Inverso do groove.</td>
-  </tr>
-  <tr>
-    <td>inset</td>
-    <td>efeito 3D</td>
-    <td>Afundado.</td>
-  </tr>
-  <tr>
-    <td>outset</td>
-    <td>efeito 3D</td>
-    <td>Elevado.</td>
-  </tr>
-</table>
-<h2>Propriedades Gerais de Borda</h2>
-
-<table class="tabela-tags">
-  <tr>
-    <td>Propriedade</td>
-    <td>Exemplo</td>
-    <td>Descrição</td>
-  </tr>
-
-  <tr>
-    <td>border-width</td>
-    <td>
-      thin
-      medium
-      thick
-      2px
-    </td>
-    <td>Define a espessura da borda.</td>
-  </tr>
-
-  <tr>
-    <td>border-color</td>
-    <td>border-color: red;</td>
-    <td>Define a cor da borda.</td>
-  </tr>
-
-  <tr>
-    <td>border-style</td>
-    <td>solid, dashed, etc.</td>
-    <td>Define o estilo da borda.</td>
-  </tr>
-
-  <tr>
-    <td>border</td>
-    <td>border: 2px solid #000;</td>
-    <td>Atalho que combina espessura, estilo e cor.</td>
-  </tr>
-
-</table>
-    <h2>Tipos de fontes no css</h2>
-    <table class="tabela-tags">
-
-    <tr>
-     <td>font-family, Define a família de fontes usada no elemento.</td>
-    <td>font-family: "Roboto", Arial, sans-serif;</td>
-    </tr>
-
-    <tr>
-     <td>font-size, Define o tamanho da fonte.</td>
-    <td>font-size: 16px;</td>
-    </tr>
-
-    <tr>
-     <td>font-weight, Define o peso (espessura) da fonte.</td>
-    <td>font-weight: 300;</td>
-    </tr>
-
-    <tr>
-     <td>font-style, Define o estilo da fonte.</td>
-    <td>font-style: italic;</td>
-    </tr>
-
-    <tr>
-     <td>font-variant, Define variações tipográficas como small-caps.</td>
-    <td>font-variant: small-caps;
-</td>
-    </tr>
-
-
-    <tr>
-     <td>text-decoration, Decoração do texto.</td>
-    <td>text-decoration: underline;</td>
-    </tr>
-
-
-    <tr>
-     <td>text-align, Alinhamento do texto.</td>
-    <td>text-align: center;</td>
-    </tr>
-
-
-    <tr>
-     <td>text-indent, Recuo da primeira linha.</td>
-    <td>text-indent: 30px;</td>
-    </tr>
-
-
-    <tr>
-     <td>text-shadow, Sombra no texto.</td>
-    <td>text-shadow: 2px 2px 5px #000;</td>
-    </tr>
-
-
-    <tr>
-     <td>white-space, Controle de espaçamento e quebras.</td>
-    <td>white-space: nowrap;</td>
-    </tr>
+    <h2>propriedade hover</h2>
+<p>aqui voce pode fazer que quando voce passe em cima do mouse mude de cor um elemento</p>
+    <!-- TABELAS DE ESTILOS -->
+    <div class="bordona">
+        <h2>Tipos de Estilo de Borda (border-style)</h2>
+        <table class="tabela-tags">
+            <tr>
+                <th>Estilo</th>
+                <th>Exemplo</th>
+                <th>Descrição</th>
+            </tr>
+            <tr>
+                <td>none</td>
+                <td>sem borda</td>
+                <td>Não mostra borda (padrão).</td>
+            </tr>
+            <tr>
+                <td>hidden</td>
+                <td>invisível</td>
+                <td>Igual ao none, mas usado em tabelas.</td>
+            </tr>
+            <tr>
+                <td>solid</td>
+                <td>─────</td>
+                <td>Linha contínua.</td>
+            </tr>
+            <tr>
+                <td>dashed</td>
+                <td>- - - -</td>
+                <td>Linha tracejada.</td>
+            </tr>
+            <tr>
+                <td>dotted</td>
+                <td>. . . .</td>
+                <td>Linha pontilhada.</td>
+            </tr>
+            <tr>
+                <td>double</td>
+                <td>════</td>
+                <td>Dupla linha.</td>
+            </tr>
+            <tr>
+                <td>groove</td>
+                <td>efeito 3D</td>
+                <td>Parecido com “entalhado”.</td>
+            </tr>
+            <tr>
+                <td>ridge</td>
+                <td>efeito 3D</td>
+                <td>Inverso do groove.</td>
+            </tr>
+            <tr>
+                <td>inset</td>
+                <td>efeito 3D</td>
+                <td>Afundado.</td>
+            </tr>
+            <tr>
+                <td>outset</td>
+                <td>efeito 3D</td>
+                <td>Elevado.</td>
+            </tr>
         </table>
-   
-    <div class="margin">
+    </div>
+
+    <div class="bordona">
+        <h2>Propriedades Gerais de Borda</h2>
+        <table class="tabela-tags">
+            <tr>
+                <th>Propriedade</th>
+                <th>Exemplo</th>
+                <th>Descrição</th>
+            </tr>
+            <tr>
+                <td>border-width</td>
+                <td>thin / medium / thick / 2px</td>
+                <td>Define a espessura da borda.</td>
+            </tr>
+            <tr>
+                <td>border-color</td>
+                <td>border-color: red;</td>
+                <td>Define a cor da borda.</td>
+            </tr>
+            <tr>
+                <td>border-style</td>
+                <td>solid, dashed, etc.</td>
+                <td>Define o estilo da borda.</td>
+            </tr>
+            <tr>
+                <td>border</td>
+                <td>2px solid #000;</td>
+                <td>Atalho que combina tudo.</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="bordona">
+        <h2>Tipos de fontes no CSS</h2>
+        <table class="tabela-tags">
+            <tr><td>font-family</td><td>"Roboto", Arial, sans-serif;</td></tr>
+            <tr><td>font-size</td><td>16px;</td></tr>
+            <tr><td>font-weight</td><td>300;</td></tr>
+            <tr><td>font-style</td><td>italic;</td></tr>
+            <tr><td>font-variant</td><td>small-caps;</td></tr>
+            <tr><td>text-decoration</td><td>underline;</td></tr>
+            <tr><td>text-align</td><td>center;</td></tr>
+            <tr><td>text-indent</td><td>30px;</td></tr>
+            <tr><td>text-shadow</td><td>2px 2px 5px #000;</td></tr>
+            <tr><td>white-space</td><td>nowrap;</td></tr>
+        </table>
+    </div>
+
+    <!-- ESPAÇAMENTO -->
+    <div class="margin bordona">
         <h2>Tipos de espaçamentos</h2>
         <p>Aqui vão todos os tipos de espaçamentos:</p>
+        <table class="tabela-tags">
+            <tr><td>max-width</td><td>Define o máximo de largura (px).</td></tr>
+            <tr><td>width</td><td>Controla a largura.</td></tr>
+            <tr><td>height</td><td>Controla a altura.</td></tr>
+            <tr><td>margin: 10px;</td><td>Todas as margens iguais</td></tr>
+            <tr><td>margin: 10px 20px;</td><td>Cima/Baixo 10px • Lados 20px</td></tr>
+            <tr><td>margin: 10px 20px 30px;</td><td>Cima 10px • Lados 20px • Baixo 30px</td></tr>
+            <tr><td>margin: 10px 20px 30px 40px;</td><td>Cima • Direita • Baixo • Esquerda</td></tr>
+            <tr><td>margin-top</td><td>Margem superior</td></tr>
+            <tr><td>margin-right</td><td>Margem à direita</td></tr>
+            <tr><td>margin-bottom</td><td>Margem inferior</td></tr>
+            <tr><td>margin-left</td><td>Margem à esquerda</td></tr>
+            <tr><td>margin: auto;</td><td>Centraliza o elemento</td></tr>
+            <tr><td>padding</td><td>Espaçamento interno do elemento</td></tr>
+        </table>
+    </div>
 
-        <div class="espaçamento">
-            <table class="tabela-tags">
-                <tr>
-                    <td>margin: 10px;</td>
-                    <td>— Todas as margens iguais</td>
-                </tr>
-                <tr>
-                    <td>margin: 10px 20px;</td>
-                    <td>— Cima/Baixo = 10px, Esquerda/Direita = 20px</td>
-                </tr>
-                <tr>
-                    <td>margin: 10px 20px 30px;</td>
-                    <td>— Cima = 10px, Lados = 20px, Baixo = 30px</td>
-                </tr>
-                <tr>
-                    <td>margin: 10px 20px 30px 40px;</td>
-                    <td>— Cima, Direita, Baixo, Esquerda (sentido horário)</td>
-                </tr>
-                <tr>
-                    <td>margin-top: 15px;</td>
-                    <td>— Espaço superior do elemento</td>
-                </tr>
-                <tr>
-                    <td>margin-right: 20px;</td>
-                    <td>— Espaço à direita</td>
-                </tr>
-                <tr>
-                    <td>margin-bottom: 25px;</td>
-                    <td>— Margem inferior</td>
-                </tr>
-                <tr>
-                    <td>margin-left: 30px;</td>
-                    <td>— Margem à esquerda</td>
-                </tr>
-                <tr>
-                    <td>margin: auto;</td>
-                    <td>— Centraliza o elemento horizontalmente</td>
-                </tr>
-                <tr>
-                    <td>padding</td>
-                    <td>Ele “empurra” o conteúdo para dentro do elemento, aumentando o espaço entre o conteúdo</td>
-                </tr>
-            </table>
+    <!-- POSITION -->
+    <div class="bordona">
+        <h2>Tipos de position</h2>
+        <table class="tabela-tags">
+            <tr><td>position: static</td><td>Padrão, elemento parado.</td></tr>
+            <tr><td>position: relative</td><td>Permite mover o elemento usando coordenadas. Pode sobrepor outros elementos.</td></tr>
+            <tr><td>position: fixed</td><td>Elemento fixo na tela, não se move com scroll. Pode usar top/left/right/bottom.</td></tr>
+            <tr><td>z-index</td><td>Controla qual elemento fica por cima.</td></tr>
+        </table>
+
+        <h2>position: absolute</h2>
+        <p>Remove o elemento do fluxo e o posiciona com base no primeiro ancestral com position definido.</p>
+        <h2>position: sticky</h2>
+        <p>Combina relative e fixed. Fica preso ao chegar no top: 0. Funciona apenas dentro do seu contêiner.</p>
+    </div>
+
+    <!-- BACKGROUND -->
+    <div class="bordona">
+        <h2>Tipos de background no CSS</h2>
+        <h3>background-size</h3>
+        <p>Controla o tamanho da imagem:</p>
+        <p>
+background-size: cover;      cobre tudo
+background-size: contain;    inteiro visível
+background-size: 100% 50%;   largura x altura
+        </p>
+
+        <h3>background-repeat</h3>
+        <p>Define se a imagem repete:</p>
+        <p>
+background-repeat: repeat;       padrão
+background-repeat: no-repeat;    a imagem não se repete
+background-repeat: repeat-x;
+background-repeat: repeat-y;
+        </p>
+        <h3>background-image: url();</h3>
+        <p>para você adicionar uma imagem ex: <br> background-image url(fundo.png)</p>
+
+        <h3>background-position</h3>
+        <p>aqui você pode definir a posição da imagem de fundo ex:</p>
+        <p>.elemento {<br>
+  background-image: url('imagem.jpg');<br>
+  background-position: center top;<br>
+}</p>
+    </div>
+
+    <div class="bordona">
+<h2>Tipos de overflow</h2>
+
+<p>overflow se refere ao comportamento de conteúdo que ultrapassa os limites de um contêiner. Em vez de permitir que esse conteúdo "transborde" de forma desorganizada, o CSS oferece várias maneiras de lidar com ele. O overflow controla o que acontece quando o conteúdo de um elemento excede suas dimensões especificadas (largura e altura).</p>
+
+<h3>overflow: visible </h3>
+<p>é o padrão, mesmo que o conteudo fique fora do elemento ele ira mostrar</p>
+
+<h3>overflow:hidden</h3>
+<p>Comportamento: O conteúdo que excede o tamanho do contêiner será ocultado (não será visível). ex: </p>
+<p>.caixa { <br>
+  width: 200px;<br>
+  height: 100px;<br>
+  overflow: hidden;<br>
+}</p>
+
+<h3>overflow:scroll</h3>
+<p>Comportamento: O conteúdo que excede o tamanho do contêiner será cortado, mas barras de rolagem (tanto horizontais quanto verticais) serão adicionadas para permitir que o usuário role e veja o conteúdo oculto, ex:</p>
+<p>.caixa {<br>
+      width: 200px;<br>
+  height: 100px;<br>
+  overflow: scroll;<br>
+}</p>
+
+<h3>overflow:auto</h3>
+<p>Comportamento: O conteúdo será cortado, e as barras de rolagem serão adicionadas automaticamente, somente quando necessário. Ou seja, se o conteúdo não ultrapassar as dimensões do contêiner, não aparecerão barras de rolagem.</p>
+<p>.caixa {<br>
+  width: 200px;<br>
+  height: 100px;<br>
+  overflow: auto;<br>
+}</p>
+
+<h3>overflow-y:hidden</h3>
+<p>se voce colocar isso na parte do "body" do site que é o corpo voce remove a barra de rolagem pra baixo do site</p>
+<h3>overflow-x:hidden</h3>
+<p>aqui é quase a mesma coisa mas aqui vocé vai remover a rolagem pra direita que é a rolagem pro lado</p>
         </div>
+<h2>Tipos de float</h2>
+<h3>Float</h3>
+<p>é para fazer um elementos flutuar de um lugar para outro</p>
+    <!-- TABELAS HTML -->
+    <div class="bordona">
+        <h2>Tabelas</h2>
+        <table class="tabela-tags">
+            <tr><td>&lt;table&gt;</td><td>Criar tabela</td></tr>
+            <tr><td>&lt;tr&gt;</td><td>Linha da tabela</td></tr>
+            <tr><td>&lt;th&gt;</td><td>Cabeçalho da tabela</td></tr>
+            <tr><td>&lt;caption&gt;</td><td>Legenda da tabela</td></tr>
+        </table>
+    </div>
 
-        <h2>tabelas </h2>
-            <table class="tabela-tags">
-                <tr><td>body { background-color: aqua; }</td><td>— Mudar o fundo de uma página inteira</td></tr>
-                <tr><td>&lt;table&gt;</td><td>— Criar uma tabela</td></tr>
-                <tr><td>&lt;tr&gt;</td><td>— Linha de tabela</td></tr>
-                <tr><td>&lt;th&gt;</td><td>— Cabeçalho da tabela</td></tr>
-                <tr><td>&lt;caption&gt;</td><td>— Legenda da tabela</td></tr>
-            </table>
-           <table class="tabela-tags">
-            <h2>tipos de display flex</h2>
-            <tr><td>display: block</td><td>O elemento **ocupa toda a largura disponível** (uma linha inteira).
-* Sempre começa em uma **nova linha**.</td></tr>
+    <!-- DISPLAY -->
+    <div class="bordona">
+        <h2>Tipos de display</h2>
+        <table class="tabela-tags">
+            <tr><td>display: block</td><td>Ocupa a linha inteira e força quebra de linha.</td></tr>
+            <tr><td>display: inline</td><td>Não quebra linha. Não aceita width/height.</td></tr>
+            <tr><td>display: inline-block</td><td>Não quebra linha e aceita width/height.</td></tr>
+        </table>
+    </div>
 
-<tr><td>`display: inline;</td><td>o elemento não quebra a linha, so ocupa o <br> tamanho do conteudo não aceita width, ou height  </td></tr>
-<tr><td>display inline-block</td> <td>a mistura dos 2 comportamentos não quebra linha como o inline <br> aceita width, margin. como o block</td></tr>
+    <!-- SCRIPTS -->
+    <script src="aula1.js"></script>
+    <script>
+        document.getElementById("botao2").addEventListener("click", () => {
+            window.open("js.html", "_blank");
+        });
 
-
-</table>
-
-
-<script src="aula1.js"></script>
-<script>
-    // Correção dos eventos de clique
-    document.getElementById("botao2").addEventListener("click", function() {
-        window.open("js.html", "_blank");
-    });
-
-    document.getElementById("botao4").addEventListener("click", function() {
-        window.open("index.html", "_blank");
-    }); </script>
-
+        document.getElementById("botao4").addEventListener("click", () => {
+            window.open("index.html", "_blank");
+        });
+    </script>
 </body>
+
 </html>
