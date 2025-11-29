@@ -14,11 +14,33 @@
     <div class="borda1">
         <div class="titulo">
             <h1 class="tittle">Fundamentos do CSS</h1>
-            <button class="botao13" id="botao2">JS</button>
-            <button class="botao15" id="botao4">HTML</button>
+            <a href="index.html" target="_blank" class="botao">HTML</a>
+            <a href="js.html" target="_blank" class="botao">JS </a>
+            <a href="#"  class="botao" >login</a>
         </div>
     </div>
 
+<div class="bordona">
+<div class="especificidade">
+<h2>especificidade CSS</h2>
+<p>o elemento que o navegador vai priorizar</p>
+<p>
+o que esta definido na tag(HTML) vai ser mais priorizada
+<br></p>
+<p>arquivo externo arquivo.css(segunda) <br></p>
+<p>style(usando o como seletor) vai ser a ultima <br></p>
+<p>outra explicação</p>
+</div>
+</div>
+
+
+
+<div class="bordona">
+<H2>!important</H2>
+<p>dentro de um elemento ex: &lt;h1 id = meuid class = minha class &gt; Meu titulo &lt;/h1&gt;</p>
+<p>se varias dessas classes estiverem no mesmo arquivo css o ID seria o prioritario mas tem como contornar isso usando o !important</p>
+<p></p>
+</div>
     <div>
         <h1>body</h1>
         <h2>Fontes de texto</h2>
@@ -27,6 +49,22 @@
             todo o site vai usar somente esse tipo de fonte de texto. Veja um exemplo abaixo:
         </p>
         <p>
+            <div class="bordas1">
+<div class="importante">
+
+<h2 class="importante2">importante: Media queries</h2>
+
+<p>usando o codigo que esta nesse link voce pode definir o que vai ter ou não vai ter em cada resolução de tela</p>
+
+<a style="font-size: 30px; color: aliceblue;" href="dispositivos.txt" target="_blank">clique aqui</a>
+
+
+
+</div>
+</div>
+aa
+<br>
+
 body {
     background-color: #ccc;
 }
@@ -41,6 +79,8 @@ body {
 
     <h2>propriedade hover</h2>
 <p>aqui voce pode fazer que quando voce passe em cima do mouse mude de cor um elemento</p>
+<p>ex: <br> img1:hover{<br> opacity:0.5 <br>}  </p>
+
     <!-- TABELAS DE ESTILOS -->
     <div class="bordona">
         <h2>Tipos de Estilo de Borda (border-style)</h2>
@@ -177,14 +217,15 @@ body {
         <table class="tabela-tags">
             <tr><td>position: static</td><td>Padrão, elemento parado.</td></tr>
             <tr><td>position: relative</td><td>Permite mover o elemento usando coordenadas. Pode sobrepor outros elementos.</td></tr>
-            <tr><td>position: fixed</td><td>Elemento fixo na tela, não se move com scroll. Pode usar top/left/right/bottom.</td></tr>
+            <tr><td>position: fixed</td><td>Elemento fixo na tela,  se move com scroll. Pode usar top/left/right/bottom.</td></tr>
             <tr><td>z-index</td><td>Controla qual elemento fica por cima.</td></tr>
         </table>
 
-        <h2>position: absolute</h2>
+        <h3>position: absolute</h3>
         <p>Remove o elemento do fluxo e o posiciona com base no primeiro ancestral com position definido.</p>
-        <h2>position: sticky</h2>
+        <h3>position: sticky</h3>
         <p>Combina relative e fixed. Fica preso ao chegar no top: 0. Funciona apenas dentro do seu contêiner.</p>
+    
     </div>
 
     <!-- BACKGROUND -->
@@ -215,7 +256,13 @@ background-repeat: repeat-y;
   background-image: url('imagem.jpg');<br>
   background-position: center top;<br>
 }</p>
+
+<h3>background-image: linear gradiant</h3>
+<p>aqui você pode colocar varias cores e elas podem se juntar</p>
     </div>
+
+    <h3>opacity</h3>
+    <p>vai de 0.0 ate 1.0 opacity é a opacidade da imagem então quanto menor a opacidade mais clara a imagem fica</p>
 
     <div class="bordona">
 <h2>Tipos de overflow</h2>
@@ -253,11 +300,26 @@ background-repeat: repeat-y;
 <p>se voce colocar isso na parte do "body" do site que é o corpo voce remove a barra de rolagem pra baixo do site</p>
 <h3>overflow-x:hidden</h3>
 <p>aqui é quase a mesma coisa mas aqui vocé vai remover a rolagem pra direita que é a rolagem pro lado</p>
-        </div>
+<h3>text-overflow: ellipsis</h3>
+<p>aqui é pra caso o elemento de texto esta definido como white-space:nowrap e o overflow hidden <br>
+caso chegue ao limite ele ira adicionar "..." mostra que tem mais coisa so que não esta mostrando</p>
+</div>
+
+<div>
 <h2>Tipos de float</h2>
 <h3>Float</h3>
 <p>é para fazer um elementos flutuar de um lugar para outro</p>
-    <!-- TABELAS HTML -->
+</div>
+<h2>tipos de Shadows</h2>
+<H3>text-shadow:</H3>
+<p>text-shadow: 2px 2px 5px red</p> 
+<p>aqui voce pode definir a sombra no texto</p>  
+<p>tambem pode usar mais de 1 text shadow para usar mais de uma siga esse exemplo: <br></p> 
+<p>text-shadow: 2px 2px 5px red, 4px 4 px 2px yellow</p>
+<h3>box-shadow</h3>
+<p>mesma formatação do text-shadow so que esse é para caixas/div e etc</p>
+
+<!-- TABELAS HTML -->
     <div class="bordona">
         <h2>Tabelas</h2>
         <table class="tabela-tags">
@@ -268,15 +330,68 @@ background-repeat: repeat-y;
         </table>
     </div>
 
+<div class="bordas1">
+            <h2>display-flex</h2>
+<p>display: flex é uma propriedade do CSS que transforma um elemento em um container flexível (“flex container”). </p>
+<p>Dentro dele, todos os elementos filhos se tornam itens flexíveis (“flex items”).</p>
+<p>Isso facilita muito organizar elementos em linha, centralizar coisas, criar espaçamentos automáticos, e deixar o layout responsivo sem complicação.</p>
+
+<p>Exemplo: <br>
+<strong>.container { <br>
+  display: flex;<br>
+  flex-direction: row; /* horizontal (padrão) */ <br>
+  /* flex-direction: column; vertical */</strong>
+}   
+<h2>display-flex wrap</h2>
+<p>aqui é caso se a resolução for menor que a div ele vai joga a div pra baixo(o que falta) </p>
+</p>
+
+<h2>flex-grow</h2>
+<p>aumenta o tamanho dos elementos ate pra se adaptarem da div pai</p>
+<h2>flex:</h2>
+<p>aumenta o tamanho da div filho</p>
+
+
+
+
+
+
+</div>
+<div class="just"></div>
+<h2>justify-content</h2>
+<table class="tabela-tags">
+<ul>
+<tr><td>justify-content: flex-start</td><td>é o padrão começa no começo</td></tr>
+<tr><td>justify-content: flex-end</td><td>joga a linha tudo pro final</td></tr>
+<tr><td>justify-content: center</td><td>joga a linha para o centro</td></tr>
+<h2>aligh-itens:</h2>
+<p>é o posicionamento do elemento exemplo pode definir <br> onde ele vai ficar no canto da pagina ou no centro</p>
+<tr><td>aligh-itens:center</td><td>o elemento ira ficar no meio/centro</td></tr>
+<tr><td>aligh-itens:flex-start</td>
+<tr><td>aligh-itens:flex-end</td>
+    <tr><td>aligh-content:center</td><td>ira deixar tudo organizado caso a resolução do dispositivo não caiba</td></tr>
+
+
+
+</ul>
+
+</table>
+
     <!-- DISPLAY -->
     <div class="bordona">
         <h2>Tipos de display</h2>
         <table class="tabela-tags">
-            <tr><td>display: block</td><td>Ocupa a linha inteira e força quebra de linha.</td></tr>
+    <ul >
+        <tr><td>display: block</td><td>Ocupa a linha inteira e força quebra de linha.</td></tr>
             <tr><td>display: inline</td><td>Não quebra linha. Não aceita width/height.</td></tr>
+        
             <tr><td>display: inline-block</td><td>Não quebra linha e aceita width/height.</td></tr>
+        </ul>
         </table>
     </div>
+
+
+
 
     <!-- SCRIPTS -->
     <script src="aula1.js"></script>
