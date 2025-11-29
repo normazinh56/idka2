@@ -26,12 +26,13 @@ font-size: 30px;
 color: tomato;
 
 }
-
-.tittle{
-color: rgb(255, 255, 255);
-text-shadow: 2px 2px 5px #ff0000;
+.especificidade{
+margin-top: 203px;
 }
 
+.basico{
+margin-top: 304px;
+}
 .tabela-tags {
     display: inline-block;
     width: 100%;
@@ -65,39 +66,31 @@ text-shadow: 2px 2px 5px #ff0000;
 display: block;
 }
 
-.botao12, .botao13, .botao14, .botao15{
-    display: inline-block; /* impede alongamento */
-    font-size: 20px;
-    padding: 10px;
-}
-
-/* impede alongamento */
-.botao14{
- display: inline-block; 
-    font-size: 20px;
-    padding: 10px;
-    }
-    
-
-
 .index{
 font-size: 30px;
 color: aqua;
 }
 
 
-.borda1{
-max-height: 250px;
-background-color: #000;
-max-width: 1150px;
-border-radius: 20px;
-margin-left: 490px;
-display: inline-block;
-margin-top: 20px;
-
-border: 2px solid #ec0808;
+.borda1 {
+    position: fixed;
+    top: 0;            /* fixa no topo sem espaço */
+    left: 0;           /* opcional: começa do lado esquerdo */
+    right: 0;          /* opcional: estica até a direita */
+    max-height: 400px;      /* ajuste conforme seu menu */
+    background-color: #000;
+    border-radius: 0 0 20px 20px; /* bordas suavizadas embaixo */
+    border: 2px solid #ec0808;
+    z-index: 999;      /* garante que fique acima de tudo */
 }
 
+
+
+.tittle{
+color: rgb(255, 255, 255);
+text-shadow: 2px 2px 5px #ff0000;
+display: inline-block;
+}
 
 
 .procure{
@@ -124,4 +117,127 @@ font-size: 20px
 border: 7px solid #12dcf7;
 max-width: 1100px;
 margin-bottom: 60px;
+}
+
+.botao{
+
+font-size: 40px;
+margin-left: 20px;
+text-decoration: none;
+color: #12dcf7;
+margin-right: 20px;
+}
+.chisa{
+width: 100%;
+}
+
+.botao:hover{
+    color: #ec0808;
+}
+
+.card {
+    width: 17%;
+    height: auto;
+    background-color: #12dcf7;
+}
+
+.pequeno {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/* aplica apenas quando o mouse estiver no card */
+.card:hover .pequeno {
+    white-space: normal;
+}
+
+.importante{
+
+
+}
+
+.importante2{
+
+}
+
+
+.bordas1{
+border: #ec0808 dashed;
+
+}
+
+
+
+/* Smartphones (600px para baixo) */
+@media only screen and (max-width: 599px) {
+body{background-color: #000000;
+}
+
+}
+
+
+
+
+
+
+
+
+/* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
+@media only screen and (min-width: 600px) {
+    body{
+    
+    }
+.borda1 {
+    
+    max-height: 400px;      /* ajuste conforme seu menu */
+    background-color: #000;
+    border-radius: 0 0 20px 20px; /* bordas suavizadas embaixo */
+    border: 2px solid #ec0808; 
+   /*sem erro nesse pode confia*/
+
+}
+}
+
+/*Dispostivos Médios (Tablets deitados, 768px para cima) */
+@media only screen and (min-width: 768px) {
+ body{
+
+}
+    .borda1 {
+    
+    max-height: 400px;      /* ajuste conforme seu menu */
+    background-color: #000;
+    border-radius: 0 0 20px 20px; /* bordas suavizadas embaixo */
+    border: 2px solid #ec0808; 
+   
+
+}
+}
+
+
+
+/* Dispostivos Largos (laptops/desktops, 992px para cima) */
+@media only screen and (min-width: 992px) {
+
+    .borda1 {
+    
+    max-height: 400px;      /* ajuste conforme seu menu */
+    background-color: #000;
+    border-radius: 0 0 20px 20px; /* bordas suavizadas embaixo */
+    border: 2px solid #ec0808; 
+   
+
+}
+
+}
+
+/* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
+@media only screen and (min-width: 1200px) {
+
+}
+
+.just{
+display: inline-block;
+
 }
