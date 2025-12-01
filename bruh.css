@@ -189,6 +189,7 @@ body{background-color: #000000;
     
     }
 .borda1 {
+
     
     max-height: 400px;      /* ajuste conforme seu menu */
     background-color: #000;
@@ -240,4 +241,12 @@ body{background-color: #000000;
 .just{
 display: inline-block;
 
+}
+
+.espaco{
+margin-top: 190px;
+}
+
+framado{
+font-size: 35px;
 }
