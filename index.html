@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>HTML</title>
-<link rel="shortcut icon" href="chisa.png" type="image/x-icon">
+<link rel="shortcut icon" href="imgs/chisa.png" type="image/x-icon">
 
     <!-- Link para o arquivo CSS externo -->
     <link rel="stylesheet" href="bruh.css">
@@ -18,17 +18,17 @@
 <body>
     
     <!-- Título principal da página -->
-    <div class="borda1">
+    <header class="borda1">
     <div class="titulo">
         
         <h1 class="tittle">Fundamentos do HTML</h1>
-        <div class="botoes">
+        <nav class="botoes">
         <a class="botao" href="css.html"target="_blank">css</a>
         <a class="botao" href="js.html"target="_blank">JS</a>
         <a href="https://chatgpt.com" target="_blank"></a>
+    </nav>
     </div>
-    </div>
-</div>
+</header>
     
 
     <!-- Explicação sobre criação de arquivos -->
@@ -71,7 +71,57 @@
             <tr><td>&lt;ul&gt; + &lt;li&gt;</td><td>— Cria uma lista (não ordenada)</td>
             <td>para remover o bolinha use o "list-style-type: none" no css</td></tr>
         </table>
+<p></p>explicação completa</p>
+
+<h2>&lt;Hr&gt;</h2>
+<p>serve para criar uma seção com linhas</p>
+<h2>&lt;br&gt;</h2>
+<p>ele quebra a linha</p>
+
+<h2>del</h2>
+<p>aqui voce coloca um risco no texto</p>
+<h2>sup</h2>
+<p>essa tag serve para deixar um numero superior tipo um numero elevado tipo <br> 2 <sup>2</sup></p>
+<h2>sub</h2>
+<p>ele faz a mesma coisa que o sup mas deixa embaixo</p>
+<h2>abbr</h2>
+<p>se voce tem uma abrevbiação voce pode usar ela pra quando o usuario passa o mouse aparecer uma explicação</p>
+<p>&lt;abbr title="hyper text"&gt;</p>
+
+
+
+
+
     </div>
+
+
+    <div class="espaco">
+
+<div class="bordona">
+        <h2>Meta tags</h2>
+<h2>Precisa esta dentro do head</h2>
+        <p>&lt;meta charset="UTF-8"&gt;</p>
+        <p>Serve para definir os tipos dos caracteres usando UTF-8.</p>
+        <p>Garante compatibilidade com acentuações.</p>
+
+        <h2>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</h2>
+        <p>A tela vai se adaptar ao dispositivo da pessoa.</p>
+        <h2>&lt;meta name="description" content="esse é o meu primeiro site"&gt; </h2>
+        <p>serve para quando voce for manda o link do site para alguem irar aparecer uma mini Descrição</p>
+    <h2>&lt;meta name="keywords" content=""</h2>
+<p>palavras chaves do seu site  </p>    
+<h2>&lt;meta name="author" content=""</h2>
+<p>é o autor do site quem fez ele</p>
+
+
+
+</div>
+</div>
+
+
+
+
+
 
     <!-- Extensões recomendadas para o VS Code -->
     <div class="extensoes">
@@ -143,6 +193,27 @@
             <code>&lt;audio src="musica.mp3" controls&gt;&lt;/audio&gt;</code>
         </p>
 
+<!--<p><audio controls>
+  <source src="Nightcore - What It Sounds Like (Rock Version) (Lyrics).m4a" 
+  type="audio/mp4">
+</audio>--->
+
+<!--<p>✔ Outros tipos comuns
+Formato	MIME type recomendado
+.mp3	audio/mpeg
+.ogg	audio/ogg
+.wav	audio/wav</p> -->
+
+
+
+
+<!---<video autoplay poster="/imgs/wall.jpg" controls>
+
+    <source src="Thunder mansEpisódio 1.mp4">
+</video>
+
+-->
+
         <h2>Incorporar conteúdo externo</h2>
         <p>Para incorporar um conteúdo externo use: <strong>&lt;iframe&gt;</strong></p>
     </div>
@@ -175,6 +246,26 @@
             <tr><td>&lt;select&gt;</td><td>— Menu suspenso</td></tr>
             <tr><td>&lt;button&gt;</td><td>— Botão</td></tr>
         </table>
+<h2>explicação mais completa aqui:</h2>
+<p><h2>tipos de &lt;form&gt;</h2>
+
+<h3>&lt;input type="text" placeholder="aaa" required&gt;</h3>
+
+<p>o input serve para algo de texto</p>
+<p>o praceholder serve para deixar uma marca da agua dentro do menu de text</p>
+
+<h3>type="password"</h3>
+<p>Campo que esconde os caracteres da senha</p>
+
+<h3>type="email"</h3>
+<h3>required</h3>
+
+<p>obriga o usuario a completar o espaço</p>
+<p>ele reconhece se é um email ou não</p>
+
+<h3>label</h3>
+<p> Descreve cada campo de forma acessível</p>
+</p>
 
         <h2>Estruturação moderna (HTML5)</h2>
         <table class="tabela-tags">
